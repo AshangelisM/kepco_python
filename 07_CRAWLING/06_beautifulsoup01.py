@@ -28,9 +28,5 @@ soup = BeautifulSoup(html_doc,'html.parser')
 # print(soup.find_all('a'))
 # print(soup.find('a'))
 # print(soup.find(id='link3'))
-# print(soup.find(href='http://example.com/tillie'))
+# print(soup.find(href="http://example.com/tillie"))
 # print(soup.find_all(class_='sister'))
-# for link in soup.find_all('a'):
-#     print(link.get('href'))
-
-print(soup.get_text())
