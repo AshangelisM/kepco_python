@@ -6,7 +6,7 @@ client_secret = ""
 query = input('검색할 단어 >>> ')
 encText = urllib.parse.quote(query)
 url = "https://openapi.naver.com/v1/search/news.json?query=" + encText # JSON 결과
-# url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText # XML 결과
+url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText # XML 결과
 request = urllib.request.Request(url)
 request.add_header("X-Naver-Client-Id",client_id)
 request.add_header("X-Naver-Client-Secret",client_secret)
